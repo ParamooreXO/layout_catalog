@@ -6,7 +6,7 @@
   background-color: $secondary-color;
   box-sizing: border-box;
 
-  transition-duration: 500ms;
+  transition-duration: 300ms;
 
   &__image {
     display: block;
@@ -87,11 +87,11 @@
 
   &__button:hover {
     transition:
-      color 500ms,
-      background-color 500ms;
+      color 300ms,
+      background-color 300ms;
     border: 1px solid $primary-color;
-    background-color: #fff;
-    color: #00acdc;
+    background-color: $secondary-color;
+    color: $primary-color;
   }
 
   &:hover {
@@ -99,7 +99,7 @@
   }
 
   &:hover .card__title {
-    transition: color 500ms;
-    color: #34568b;
+    transition: color 300ms;
+    color:$card-title-color-hover;
   }
 }

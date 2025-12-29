@@ -1,12 +1,12 @@
 .stars {
   display: flex;
-  gap: 4px;
+  gap: $stars-gap;
 
   &__star {
     background-image: url(../images/star.svg);
     background-repeat: no-repeat;
-    width: 16px;
-    height: 16px;
+    width: $stars-size;
+    height: $stars-size;
   }
 
   @for $i from 1 through 5 {

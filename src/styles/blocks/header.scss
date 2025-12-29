@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  box-shadow: 0 2px 4px 0 #0000000d;
+  box-shadow: 0 2px 4px 0 $box-shadow-color;
   align-items: center;
   justify-content: space-between;
   padding: 0 50px;
@@ -23,7 +23,8 @@
     line-height: 100%;
     letter-spacing: 0%;
     text-transform: uppercase;
-    color: $nav-text-color;
+    color: $text-color;
+    transition: color 300ms;
   }
 
   &__list {
@@ -38,13 +39,12 @@
   }
 
   &__link:hover {
-    transition: color 300ms;
-    color: $hover-color;
+    color: $primary-color;
   }
 }
 
 .is-active {
-  color: $hover-color;
+  color: $primary-color;
 
   &::after {
     content: '';
@@ -54,6 +54,6 @@
     height: 4px;
     width: 100%;
     border-radius: 8px;
-    background-color: $hover-color;
+    background-color: $primary-color;
   }
 }
